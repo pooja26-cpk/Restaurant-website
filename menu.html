@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🍽️ Delicious Bites</div>
+            <div class="hamburger">☰</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="order-summary.html">Order Summary</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="billing.html">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="menu-section">
+            <div class="container">
+                <h1>Our Menu</h1>
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="appetizers">Appetizers</button>
+                    <button class="category-btn" data-category="mains">Main Course</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="beverages">Beverages</button>
+                </div>
+
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Menu items will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+

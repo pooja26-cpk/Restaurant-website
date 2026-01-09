@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Order Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🍽️ Delicious Bites</div>
+            <div class="hamburger">☰</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="order-summary.html" class="active">Order Summary</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="billing.html">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="order-summary-section">
+            <div class="container">
+                <h1>Order Summary</h1>
+                <div class="bill-container print-friendly" id="print-bill">
+                    <div class="bill-header">
+                        <h2>🍽️ Delicious Bites</h2>
+                        <p>Restaurant Bill</p>
+                        <p class="bill-date" id="bill-date"></p>
+                    </div>
+                    <div class="bill-items" id="bill-items">
+                        <!-- Items will be populated here -->
+                    </div>
+                    <div class="bill-footer">
+                        <div class="bill-row">
+                            <span>Subtotal:</span>
+                            <span id="bill-subtotal">₹0.00</span>
+                        </div>
+                        <div class="bill-row">
+                            <span>Service Charge (10%):</span>
+                            <span id="bill-service-charge">₹0.00</span>
+                        </div>
+                        <div class="bill-row">
+                            <span>GST (5%):</span>
+                            <span id="bill-gst">₹0.00</span>
+                        </div>
+                        <div class="bill-row total">
+                            <span>Total Amount:</span>
+                            <span id="bill-total">₹0.00</span>
+                        </div>
+                    </div>
+                    <div class="bill-thankyou">
+                        <p>Thank you for your visit!</p>
+                        <p>Visit us again soon</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="window.print()">Print Bill</button>
+                    <button class="btn btn-secondary" onclick="clearCartAndRedirect()">New Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="order-summary.js"></script>
+</body>
+</html>
+
