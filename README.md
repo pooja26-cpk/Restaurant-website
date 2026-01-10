@@ -19,25 +19,25 @@ Static Frontend Website
 
 Restaurant-website/
 ├── index.html            
-# Home page 
+ Home page 
 ├── menu.html               
-# Restaurant menu page
+ Restaurant menu page
 ├── billing.html        
-# Billing and order form page 
+Billing and order form page 
 ├── order-summary.html      
-# Order summary page 
+Order summary page 
 ├── styles.css             
-# Global styles 
+Global styles 
 ├── script.js              
-# Main JavaScript for interactions
+ Main JavaScript for interactions
 ├── menu.js                
-# JavaScript for menu logic 
+javaScript for menu logic 
 ├── billing.js            
-# JavaScript for billing logic 
+JavaScript for billing logic 
 ├── order-summary.js        
-# JavaScript for order summary
+JavaScript for order summary
 └── assets/                 
-# Images, icons, and media files (if any)
+Images, icons, and media files (if any)
 
 ## 🚀 How to Use Locally
 
