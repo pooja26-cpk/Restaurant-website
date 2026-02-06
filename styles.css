@@ -705,6 +705,26 @@ footer {
     .feature-grid {
         grid-template-columns: 1fr;
     }
+    
+    .cart-item-controls {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .quantity-controls {
+        order: 1;
+    }
+    
+    .cart-item-price {
+        order: 2;
+        width: 100%;
+        text-align: left !important;
+        margin-top: 0.5rem;
+    }
+    
+    .btn-danger {
+        order: 3;
+    }
 }
 
 @media (max-width: 480px) {
@@ -745,5 +765,24 @@ footer {
 
     .menu-item-image {
         height: 180px;
+    }
+
+    /* Better touch targets for billing */
+    .quantity-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cart-item {
+        padding: 1rem;
+    }
+
+    .bill-summary {
+        padding: 1.5rem;
+    }
+
+    .btn-danger {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
     }
 }
